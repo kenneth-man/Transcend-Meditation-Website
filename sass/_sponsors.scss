@@ -1,0 +1,84 @@
+.sponsors {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+
+    background-color: $color-blue-dark;
+    padding-bottom: 20rem;
+
+    &__num,
+    &__title {
+        text-align: center;   
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(4, max-content);
+        column-gap: 29rem;
+        row-gap: 15rem;
+        align-items: center;
+
+        transform: translateX(15%);
+        max-width: max-content;
+    }
+
+    &__text-box {
+        &--1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &--2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3; 
+        }
+
+        &--3 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4; 
+        }
+
+        &--4 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        } 
+    }
+
+    &__img {
+        height: 7rem;
+        width: 24rem;
+
+        &--1 {
+            height: 10rem;
+        }
+
+        &--4 {
+            width: 32rem;   
+        }
+    }
+
+    &__para {
+        //cannot apply styling to inline elements; <p> text is inline by default
+        display: inline-block;
+
+        &--1 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &--2 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        &--3 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        &--4 {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    }
+}

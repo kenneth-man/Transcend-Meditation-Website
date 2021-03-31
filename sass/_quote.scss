@@ -1,0 +1,30 @@
+.quote {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+
+    background-image: linear-gradient(to bottom, $color-bluish, $color-bluer, $color-silver-blue);
+    padding: 25rem 0;
+    height: max-content;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        height: 60rem;
+        width: 80rem;
+        object-fit: cover;
+    }
+
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 4rem;
+        background-color: rgba($color-blue-dark, 0.85);
+        width: max-content;
+    }
+}

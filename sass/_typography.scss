@@ -1,0 +1,605 @@
+//headings
+.heading-1 {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.heading-1-alt {
+    font-size: 4rem;
+    font-weight: 100;
+    color: $color-blue-dark;
+    line-height: 5rem;
+}
+
+.heading-2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-blue-dark;  
+    font-family: $font-primary;
+}
+
+.heading-3 {
+    font-size: 2rem;
+    font-family: $font-quarternary;
+    color: #fff; 
+    text-transform: uppercase;  
+}
+
+.heading-3-alt {
+    font-size: 2.25rem;
+    font-family: $font-primary;
+    color: #fff; 
+}
+
+.heading-4 {
+    font-size: 1.7rem;  
+    font-family: $font-quarternary;
+    color: $color-blue-dark; 
+    text-transform: uppercase;
+}
+
+.heading-4-alt {
+    font-size: 2rem;  
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $color-blue-dark; 
+}
+
+.heading-4-alt-white {
+    font-size: 1.8rem;  
+    font-family: $font-primary;
+    font-weight: 300;
+    color: #fff; 
+}
+
+.heading-5 {
+    font-size: 1.6rem;
+    font-family: $font-quarternary;
+    color: $color-gold;
+    text-transform: uppercase;
+}
+
+.heading-5-alt-white {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+    color: #fff;
+}
+
+.heading-6 {
+    font-size: 1.3rem;
+    font-family: $font-primary;
+    color: $color-blue-dark;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+//buttons
+.btn-blue-light-short,
+.btn-blue-light-long,
+.btn-white-short,
+.btn-white-long {
+    font-size: 1.9rem;
+    font-family: $font-quarternary;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 40rem;
+    padding: 0.8rem 2.3rem;
+    padding-top: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-blue-light-short,
+.btn-white-short {
+    max-width: 15rem;
+}
+
+.btn-blue-light-long,
+.btn-white-long {
+    max-width: 40rem;
+    max-height: 10rem;
+}
+
+.btn-blue-light-short,
+.btn-blue-light-long {
+    color: $color-blue-dark;
+    background-color: $color-blue-light;
+    border: 0.2rem dashed #000;
+}
+
+.btn-blue-light-short:hover,
+.btn-blue-light-long:hover {
+    color: $color-blue-light;
+    background-color: #000;
+    border: 0.2rem dashed $color-blue-light;
+}
+
+.btn-blue-light-short:active,
+.btn-blue-light-long:active {
+    color: $color-blue-dark;
+    background-color: $color-blue-light;
+    border: 0.2rem dotted #000;
+}
+
+.btn-white-short,
+.btn-white-long {
+    color: $color-blue-dark;
+    background-color: #fff;
+    border: 0.2rem dashed #000;
+}
+
+.btn-white-short:hover,
+.btn-white-long:hover {
+    color: $color-silver-light;
+    background-color: $color-blue-dark;
+    border: 0.2rem dashed #fff;
+}
+
+.btn-white-short:active,
+.btn-white-long:active {
+    color: $color-blue-dark;
+    background-color: #fff;
+    border: 0.2rem dotted #000;
+}
+
+
+//links
+.link-white {
+    font-size: 2rem;
+    font-family: $font-quarternary;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.link-white:hover {
+    color: $color-blue-light;
+}
+
+.link-white:active {
+    color: #fff;
+}
+
+
+//other
+hr {
+    border: 0;
+    width: 90%;              
+    background-color: $color-gold;
+    height: 0.1rem;
+}
+
+.sticker-blue-light {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    background-color: $color-blue-light;
+    box-shadow: -0.5rem 1rem 2rem rgba(0,0,0,0.4);
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        transform: translateX(64.7vw) translateY(-55rem);
+    }
+    
+    &__deal {
+
+    }
+    
+    
+    &__text {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: $color-blue-dark;
+        font-family: $font-primary;
+        text-align: center;
+        width: 12rem;
+        margin-bottom: -2.5rem;
+    }
+
+    &__button {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.para-text {
+    font-size: 2.3rem;
+    font-family: $font-primary;
+    color: $color-blue-dark;
+}
+
+.para-text-small {
+    font-size: 1.73rem;
+    font-family: $font-primary;
+    color: $color-blue-dark;
+}
+
+.para-quote {
+    font-size: 1.8rem;
+    font-family: $font-tertiary;
+    color: #fff;
+}
+
+.gold-text {
+    color: $color-gold;
+}
+
+.silver-text {
+    color: $color-silver;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.blue-dark-text {
+    color: $color-blue-dark;
+}
+
+.blue-light-text {
+    color: $color-blue-light;
+}
+
+.no-outline {
+    outline: none;
+}
+
+.footer {
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: $font-tertiary;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    &__input {
+        height: 5rem;
+        width: 33rem;
+        background-color: $color-blue-dark;
+        border: none;
+        border-bottom: 0.2rem solid #fff;
+        font-size: 2rem;
+        font-family: $font-primary;
+        font-weight: 300;
+        color: #fff;
+
+        &-icon {
+            height: 4rem;
+            width: 4rem;
+            fill: #fff;
+        }
+    }
+
+    &__link {
+        font-size: 1.7rem;  
+        font-family: $font-quarternary;
+        color: #fff; 
+        text-transform: uppercase;
+        text-decoration: none;
+        //stop auto wrapping with multiple words; weird bug
+        white-space: nowrap;  
+        transition: all 0.3s; 
+    }
+
+    &__link:hover {
+        color: $color-blue-light;
+    }
+
+    &__fb,
+    &__tw,
+    &__inst,
+    &__link {
+        height: 3rem;
+        width: 3rem;
+        fill: #fff;
+        transition: all 0.3s;
+    }
+
+    &__fb:hover {
+        fill: rgb(23, 52, 180);
+    }
+
+    &__tw:hover {
+        fill: rgb(23, 164, 219);
+    }
+
+    &__inst:hover {
+        fill: rgb(75, 98, 226);
+    }
+
+    &__link:hover {
+        fill: rgb(236, 22, 7);
+    }
+
+    &__copyright,
+    &__legal-link {
+        font-size: 1.5rem;
+        font-family: $font-primary; 
+        color: $color-silver;
+        text-decoration: none; 
+        transition: all 0.4s;
+    }
+
+    &__legal-link:hover {
+        color: $color-gold;
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//helper classes//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+//margin
+.mb-tiny {
+    margin-bottom: 0.5rem;    
+}
+
+.mb-small {
+    margin-bottom: 1rem; 
+}
+
+.mb-medium {
+    margin-bottom: 2rem; 
+}
+
+.mb-large {
+    margin-bottom: 4rem; 
+}
+
+.mb-huge {
+    margin-bottom: 8rem; 
+}
+
+.mb-big {
+    margin-bottom: 12rem; 
+}
+
+.mb-immense {
+    margin-bottom: 16rem; 
+}
+
+.mt-supertiny {
+    margin-top: 0.2rem; 
+}
+
+.mt-tiny {
+    margin-top: 0.5rem; 
+}
+
+.mt-small {
+    margin-top: 1rem; 
+}
+
+.mt-medium {
+    margin-top: 2rem; 
+}
+
+.mt-large {
+    margin-top: 4rem; 
+}
+
+.mt-big {
+    margin-top: 5rem; 
+}
+
+.mt-huge {
+    margin-top: 8rem; 
+}
+
+.mt-immense {
+    margin-top: 16rem; 
+}
+
+.mt-insane {
+    margin-top: 32rem; 
+}
+
+.mt-xtreme {
+    margin-top: 37rem; 
+}
+
+.mt-galactic {
+    margin-top: 40rem; 
+}
+
+.mr-tiny {
+    margin-right: 0.5rem; 
+}
+
+.mr-small {
+    margin-right: 1rem; 
+}
+
+.mr-medium {
+    margin-right: 2rem; 
+}
+
+.mr-medium-large {
+    margin-right: 2.8rem; 
+}
+
+.mr-large {
+    margin-right: 4rem; 
+}
+
+.mr-large-huge {
+    margin-right: 6.7rem; 
+}
+
+.mr-huge {
+    margin-right: 8rem; 
+}
+
+.mr-immense {
+    margin-right: 16rem; 
+}
+
+.ml-minus {
+    margin-left: -2.5rem; 
+}
+
+.ml-tiny {
+    margin-left: 0.5rem; 
+}
+
+.ml-small {
+    margin-left: 1rem; 
+}
+
+.ml-medium {
+    margin-left: 2rem; 
+}
+
+.ml-medium-large {
+    margin-left: 3rem; 
+}
+
+.ml-large {
+    margin-left: 4rem; 
+}
+
+.ml-large-big {
+    margin-left: 4.5rem; 
+}
+
+.ml-big {
+    margin-left: 6.8rem; 
+}
+
+.ml-huge {
+    margin-left: 8rem; 
+}
+
+.ml-giant {
+    margin-left: 13rem; 
+}
+
+.ml-gianter {
+    margin-left: 14rem; 
+}
+
+.ml-immense {
+    margin-left: 16rem; 
+}
+
+
+//padding
+.pd-standard {
+    padding: 5rem;
+}
+
+.pd-small {
+    padding: 3rem;
+}
+
+.pd-large {
+    padding: 7rem;
+}
+
+.pdb-tiny {
+    padding-bottom: 0.5rem;    
+}
+
+.pdb-small {
+    padding-bottom: 1rem; 
+}
+
+.pdb-medium {
+    padding-bottom: 2rem; 
+}
+
+.pdb-large {
+    padding-bottom: 4rem; 
+}
+
+.pdb-huge {
+    padding-bottom: 8rem; 
+}
+
+.pdb-immense {
+    padding-bottom: 16rem; 
+}
+
+.pdt-tiny {
+    padding-top: 0.5rem; 
+}
+
+.pdt-small {
+    padding-top: 1rem; 
+}
+
+.pdt-medium {
+    padding-top: 2rem; 
+}
+
+.pdt-large {
+    padding-top: 4rem; 
+}
+
+.pdt-huge {
+    padding-top: 8rem; 
+}
+
+.pdt-immense {
+    padding-top: 16rem; 
+}
+
+.pdr-tiny {
+    padding-right: 0.5rem; 
+}
+
+.pdr-small {
+    padding-right: 1rem; 
+}
+
+.pdr-medium {
+    padding-right: 2rem; 
+}
+
+.pdr-large {
+    padding-right: 4rem; 
+}
+
+.pdr-huge {
+    padding-right: 8rem; 
+}
+
+.pdr-immense {
+    padding-right: 16rem; 
+}
+
+.pdl-tiny {
+    padding-left: 0.5rem; 
+}
+
+.pdl-small {
+    padding-left: 1rem; 
+}
+
+.pdl-medium {
+    padding-left: 2rem; 
+}
+
+.pdl-large {
+    padding-left: 4rem; 
+}
+
+.pdl-huge {
+    padding-left: 8rem; 
+}
+
+.pdl-immense {
+    padding-left: 16rem; 
+}

@@ -1,0 +1,60 @@
+.footer {
+    grid-column: 3 / 4;
+    grid-row: 8 / 9;
+
+    background-color: $color-blue-dark;
+    padding: 0rem 5rem;
+    padding-top: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(2, max-content);
+    justify-items: start;
+    align-items: start;
+    column-gap: 38rem;
+    row-gap: 15rem;
+
+    &__input-row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        
+        &--1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &--2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &--3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        &--1 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &--2 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        &--3 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    }
+}

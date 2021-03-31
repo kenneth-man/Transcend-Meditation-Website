@@ -1,0 +1,54 @@
+//colour variables
+$color-gold: #c69963;
+$color-gold-light: #f1b269;
+$color-gold-dark: #B28451;
+
+$color-silver: rgb(160, 160, 160);
+$color-silver-light: #e7e7e7;
+$color-bluish: rgb(227, 229, 235);
+$color-bluer: rgb(215, 219, 230);
+$color-silver-blue: #c7d1e6;
+$color-silver-dark: #646464;
+
+$color-blue-light: rgb(81, 221, 231);
+$color-blue-dark: rgb(16, 27, 41);
+
+
+//font variables
+$font-primary: 'Nunito', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+$font-tertiary: 'Lora', sans-serif;
+$font-quarternary: 'Rajdhani', serif;
+
+
+//project set-up (removing margin + padding, border box, root font-size, color...)
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    //root font-size defined; 1 rem = 10px, since 62.5% of 16px (web default font size) = 10px
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-tertiary;
+    color: $color-silver;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 5rem;
+}
+
+.container {
+    display: grid;
+    //adding a middle column as without it, the 1fr would span under the sidebar or some reason (workaround solution)
+    grid-template-columns: 27.5rem 0.1rem 1fr;
+    grid-template-rows: repeat(8, max-content);
+
+    background-color: $color-gold;
+}

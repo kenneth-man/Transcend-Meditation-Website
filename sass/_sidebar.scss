@@ -1,0 +1,44 @@
+.sidebar {
+    grid-column: 1 / 2;
+    //span all the way to the last row line
+    grid-row: 1 / -1;
+
+    background-color: $color-blue-dark;
+
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+    } 
+    
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: fixed;
+    }
+
+    &__signin {
+        display: flex;
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: #fff;
+    }
+
+    &__copyright {
+        font-size: 1.8rem;
+        font-family: $font-primary;
+        width: 15vw;
+
+        transform: translateX(3rem) translateY(90vh);
+
+        position: fixed;
+    }
+}

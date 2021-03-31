@@ -1,0 +1,58 @@
+.features1 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    background-image: linear-gradient(to bottom, $color-bluish, $color-bluer, $color-silver-blue);
+    padding: 0rem 5rem;
+    padding-bottom: 12rem;
+
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 35rem repeat(2, 60vh);
+    justify-items: center;
+    align-items: center;
+    column-gap: 8rem;
+    row-gap: 10rem;
+
+    &__img {
+        object-fit: cover;
+        border-radius: 0.2rem;
+        border: 1rem solid #000;
+        
+        &--1 {
+            height: 50rem;
+            width: 40rem;
+
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &--2 {
+            height: 60rem;
+            width: 90rem;
+
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
+
+    &__text--1 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text--2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        display: flex;
+        flex-direction: column;
+    } 
+
+    &__btn {
+        width: 17rem;
+    }
+}
